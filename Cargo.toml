@@ -54,7 +54,7 @@ rfd = "0.15.3"
 phf = "0.11.3"
 phf_shared = "0.11.3"
 splines = "5.0.0"
-clap = { version = "4.5.39", features = ["derive"] }
+clap = { version = "4.5.40", features = ["derive"] }
 tokio = { version = "1.45.1", features = ["macros"] }
 async-channel = "2.3.1"
 
@@ -62,10 +62,10 @@ async-channel = "2.3.1"
 gag = "1.0.0"
 
 [target.'cfg(not(target_arch = "powerpc64"))'.dependencies]
-reqwest = { version = "0.12.19", default-features = false, features = ["json", "rustls-tls"] }
+reqwest = { version = "0.12.20", default-features = false, features = ["json", "rustls-tls"] }
 
 [target.'cfg(target_arch = "powerpc64")'.dependencies]
-reqwest = { version = "0.12.19", features = ["json"] }
+reqwest = { version = "0.12.20", features = ["json"] }
 
 #───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
